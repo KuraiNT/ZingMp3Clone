@@ -1,0 +1,39 @@
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-color: #432275;
+    --purple-primary: #7200a1;
+    --text-secondary: #dadada;
+    --text-date: #8b8791;
+    --scroll-thumb-bg: #f8e5e54d;
+    --sidebar-bg: #231b2e;
+    --link-text-hover: #c662ef;
+    --scale-rate-second: calc(196 / 230);
+    --scale-rate-third: calc(162 / 230);
+    --offset-x-second: calc(0px - ((230px - (230px * var(--scale-rate-second))) / 2 + 40px));
+    --offset-x-third: calc(0px - ((230px - (230px * var(--scale-rate-third))) / 2 + 20px));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header.scroll {
+    background-color: #170f23;
+}

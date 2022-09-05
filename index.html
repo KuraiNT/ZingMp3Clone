@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/tab.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="icon" href="./assets/image/slide.jpg" type="image/x-icon"/>
+    <title>ZingClone</title>
+</head>
+<body>
+
+    <div id="app">
+        
+        <!-- Message -->
+        <div id="toast">
+            <!-- <div class="toast toast--error">
+                <div class="toast__icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Info</h3>
+                    <p class="toast__msg">Khi LCK Mùa Hè 2022 bắt đầu, gần như cộng đồng Liên Minh</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="app__container">
+            <!-- sidebar -->
+            <div id="sidebar" class="sidebar hideOnMobile">
+                <div class="sidebar__wrapper">
+                    <img src="https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg" alt="" class="sidebar__logo">
+                    
+                    <div class="sidebar__menu">
+                        <ul class="sidebar__menu-list">
+                            <li class="sidebar__menu-item active">
+                                <a href="#" class="sidebar__menu-item-link">
+                                    <i class="sidebar__menu-item-icon fa-solid fa-music"></i>
+                                    <span class="sidebar__menu-item-text textOnTablet">Cá nhân</span>
+                                </a>
+                                <div class="sidebar__menu-item-icon-song">
+                                    <i class="sidebar__menu-item-icon-song1 hideOnTablet fa-regular fa-circle-play"></i>
+                                </div>
+                            </li>
+                            <li class="sidebar__menu-item">
+                                <a href="#" class="sidebar__menu-item-link">
+                                    <i class="sidebar__menu-item-icon fa-solid fa-compact-disc"></i>
+                                    <span class="sidebar__menu-item-text textOnTablet">Khám phá</span>
+                                </a>
+                            </li>
+                            <li class="sidebar__menu-item">
+                                <a href="#" class="sidebar__menu-item-link">
+                                    <i class="sidebar__menu-item-icon fa-regular fa-file-audio"></i>
+                                    <span class="sidebar__menu-item-text textOnTablet">#zingchart</span>
+                                </a>
+                                <div class="sidebar__menu-item-icon-song">
+                                    <i class="sidebar__menu-item-icon-song2 hideOnTablet fa-regular fa-circle-play"></i>
+                                </div>
+                            </li>
+                            <li class="sidebar__menu-item">
+                                <a href="#" class="sidebar__menu-item-link">
+                                    <i class="sidebar__menu-item-icon fa-solid fa-microphone-lines"></i>
+                                    <span class="sidebar__menu-item-text textOnTablet">Radio</span>
+                                    <img src="https://zjs.zmdcdn.me/zmp3-desktop/dev/147506/static/media/live-tag.e25dd240.svg" alt="" class="sidebar__menu-item-like hideOnTablet">
+                                </a>           
+                                <div class="sidebar__menu-item-icon-song">
+                                    <i class="sidebar__menu-item-icon-song3 hideOnTablet fa-regular fa-circle-play"></i>
+                                </div>             
+                            </li>
+                            <li class="sidebar__menu-item">
+                                <a href="#" class="sidebar__menu-item-link">
+                                    <i class="sidebar__menu-item-icon fa-brands fa-playstation"></i>
+                                    <span class="sidebar__menu-item-text textOnTablet">Theo dõi</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar__scrollbar-container">
+                        <div class="sidebar__scrollbar">
+                            <!-- scroll main -->
+                            <div class="sidebar__scrollbar-main">
+                                <ul class="scrollbar__main-list">
+                                    <li class="scrollbar__main-item">
+                                        <a href="#" class="scrollbar__main-item-link">
+                                            <i class="scrollbar__main-item-icon fa-solid fa-republican"></i>
+                                            <span class="scrollbar__main-item-link-text textOnTablet">Nhạc mới</span>
+                                        </a>
+                                        <div class="scrollbar__main-item-play-song">
+                                            <i class="scrollbar__main-item-play hideOnTablet fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </li>
+                                    <li class="scrollbar__main-item">
+                                        <a href="#" class="scrollbar__main-item-link">
+                                            <i class="scrollbar__main-item-icon fa-brands fa-windows"></i>
+                                            <span class="scrollbar__main-item-link-text textOnTablet">Thể loại</span>
+                                        </a>
+                                    </li>
+                                    <li class="scrollbar__main-item">
+                                        <a href="#" class="scrollbar__main-item-link">
+                                            <i class="scrollbar__main-item-icon fa-regular fa-star"></i>
+                                            <span class="scrollbar__main-item-link-text textOnTablet">Top 100</span>
+                                        </a>
+                                    </li>
+                                    <li class="scrollbar__main-item">
+                                        <a href="#" class="scrollbar__main-item-link">
+                                            <i class="scrollbar__main-item-icon fa-solid fa-bars-staggered"></i>
+                                            <span class="scrollbar__main-item-link-text textOnTablet">MV</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <!-- Banner scroll -->
+                            <div class="sidebar__scrollbar-banner hideOnTablet">
+                                <span class="sidebar__scrollbar-banner-desc">Nghe nhạc không quảng cáo cùng kho nhạc VIP</span>
+                                <span class="sidebar__scrollbar-banner-btn">Nâng cấp VIP</span>
+                            </div>
+            
+                            <!-- Library -->
+                            <div class="sidebar__scrollbar-library">
+                                <div class="scrollbar__library-title">
+                                    <h4 class="scrollbar__library-heading textOnTablet">THƯ VIỆN</h4>
+                                    <div class="scrollbar__library-title-icon hideOnTablet">
+                                        <i class="fa-solid fa-highlighter"></i>
+                                    </div>
+                                </div>
+                                <ul class="scrollbar__library-list">
+                                    <li class="scrollbar__library-item">
+                                        <a href="#" class="scrollbar__library-item-link">
+                                            <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-song.cf0cb0b4.svg" alt="" class="scrollbar__library-item-img">
+                                            <span class="scrollbar__library-item-text textOnTablet">Bài hát</span>
+                                        </a>
+                                        <div class="scrollbar__library-item-song">
+                                            <i class="scrollbar__library-item-play hideOnTablet fa-regular fa-circle-play"></i>
+                                        </div>
+                                    </li>
+                                    <li class="scrollbar__library-item">
+                                        <a href="#" class="scrollbar__library-item-link">
+                                            <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-playlist.7e92a5f0.svg" alt="" class="scrollbar__library-item-img">
+                                            <span class="scrollbar__library-item-text textOnTablet">Playlist</span>
+                                        </a>
+                                    </li>
+                                    <li class="scrollbar__library-item">
+                                        <a href="#" class="scrollbar__library-item-link">
+                                            <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg" alt="" class="scrollbar__library-item-img">
+                                            <span class="scrollbar__library-item-text textOnTablet">Gần đây</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <!-- playlist -->
+                            <div class="sidebar__scrollbar-playlist hideOnTablet">
+                                <span class="sidebar__scrollbar-playlist-text">Playlist #1</span>
+                                <i class="sidebar__scrollbar-playlist-icon fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- new playlit -->
+                    <div onclick="showErrorToast()" class="sidebar__newlist hideOnTablet">
+                        <i class="sidebar__newlist-icon fa-solid fa-plus"></i>
+                        <span class="sidebar__newlist-title">Tạo playlist mới</span>
+                    </div>
+
+                    <!-- icon left sidebar -->
+                    <div class="sidebar__tablet-icon">
+                        <div class="sidebar__tablet-icon-right">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <div class="sidebar__tablet-icon-left">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- container -->
+            <div class="container">
+                <!-- header -->
+                <header class="header">
+                    <!-- search -->
+                    <div class="header__panel">
+                        <div class="header__control hideOnMobile">
+                            <i class="header__control-left ti-arrow-left"></i>
+                            <i class="header__control-right ti-arrow-right"></i>
+                        </div>
+                        <div class="header__search">
+                            <input type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..." class="header__search-input">
+                            <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <!-- nav -->
+                    <div class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item header__nav-item-js">
+                                <i class="header__nav-list-icon fa-solid fa-shirt"></i>
+                                <span class="header__nav-item-title">Chủ đề</span>
+                            </li>
+                            <li onclick="showErrorToast()" class="header__nav-item hideOnMobile">
+                                <i class="header__nav-list-icon fa-brands fa-viadeo"></i>
+                                <span class="header__nav-item-vip">Nâng cấp VIP</span>
+                            </li>
+                            <li onclick="showErrorToast()" class="header__nav-item hideOnMobile">
+                                <i class="header__nav-list-icon fa-solid fa-download"></i>
+                                <span class="header__nav-item-download">Tải lên</span>
+                            </li>
+                            <li class="header__nav-item hideOnMobile header__nav-item--setting">
+                                <i class="header__nav-list-icon fa-solid fa-gear"></i>
+                                
+                                <!-- modal setting -->
+                                <div class="setting setting-js">
+                                    <div class="setting__container">
+                                        <ul class="setting__container-list">
+                                            <li class="setting__container-item">
+                                                <a href="#" class="setting__container-item-link">
+                                                    <i class="setting__container-item-icon fa-solid fa-ban"></i>
+                                                    <span class="setting__container-item-name">Danh sách chặn</span>
+                                                </a>
+                                            </li>
+                                            <li class="setting__container-item">
+                                                <a href="#" class="setting__container-item-link">
+                                                    <i class="setting__container-item-icon fa-solid fa-align-right"></i>
+                                                    <span class="setting__container-item-name">Chất lượng nhạc</span>
+                                                </a>
+                                                <div class="setting__item-right">
+                                                    <i class="setting__item-right-icon1 fa-solid fa-angle-right"></i>
+                                                </div>
+                                            </li>
+                                            <li class="setting__container-item">
+                                                <a href="#" class="setting__container-item-link">
+                                                    <i class="setting__container-item-icon fa-regular fa-circle-play"></i>
+                                                    <span class="setting__container-item-name">Giao diện</span>
+                                                </a>
+                                                <div class="setting__item-right">
+                                                    <i class="setting__item-right-icon2 fa-solid fa-angle-right"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+        
+                                        <ul class="setting__nav-list">
+                                            <li class="setting__nav-item">
+                                                <a href="#" class="setting__nav-item-link">
+                                                    <i class="setting__nav-item-icon fa-solid fa-circle-info"></i>
+                                                    <span class="setting__nav-item-name">Giời thiệu</span>
+                                                </a>
+                                            </li>
+                                            <li class="setting__nav-item">
+                                                <a href="#" class="setting__nav-item-link">
+                                                    <i class="setting__nav-item-icon fa-solid fa-flag"></i>
+                                                    <span class="setting__nav-item-name">Gợi ý</span>
+                                                </a>
+                                            </li>
+                                            <li class="setting__nav-item">
+                                                <a href="#" class="setting__nav-item-link">
+                                                    <i class="setting__nav-item-icon fa-solid fa-phone"></i>
+                                                    <span class="setting__nav-item-name">Liên hệ</span>
+                                                </a>
+                                            </li>
+                                            <li class="setting__nav-item">
+                                                <a href="#" class="setting__nav-item-link">
+                                                    <i class="setting__nav-item-icon fa-brands fa-adversal"></i>
+                                                    <span class="setting__nav-item-name">Quảng cáo</span>
+                                                </a>
+                                            </li>
+                                            <li class="setting__nav-item">
+                                                <a href="#" class="setting__nav-item-link">
+                                                    <i class="setting__nav-item-icon fa-solid fa-address-card"></i>
+                                                    <span class="setting__nav-item-name">Thỏa thuận sử dụng</span>
+                                                </a>
+                                            </li>
+                                            <li class="setting__nav-item">
+                                                <a href="#" class="setting__nav-item-link">
+                                                    <i class="setting__nav-item-icon fa-solid fa-lock"></i>
+                                                    <span class="setting__nav-item-name">Chính sách bảo mật</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li onclick="showErrorToast()" class="header__nav-item">
+                                <img src="./assets/image/avatar.jpg" alt="" class="header__nav-list-img">
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <!-- Chủ đề -->
+                <div class="modal modal-js">
+                    <div class="modal__container">
+                        <header class="modal__header">
+                            <h1 class="modal__header-heading">Giao diện</h1>
+                            <i class="modal__header-close ti-close"></i>
+                        </header>
+                        <div class="modal__scroll">
+                            <!-- Content 1 -->
+                            <div class="modal__content">
+                                <h4 class="modal__content-title">Dynamic</h4>
+                                <div class="row">
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/dynamic/dynamic1.png" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">London</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/dynamic/dynamic2.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Sáng tối</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/dynamic/dynamic3.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Xanh da trời</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/dynamic/dynamic4.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Hồng</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/dynamic/dynamic5.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">London</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Content 2 -->
+                            <div class="modal__content">
+                                <h4 class="modal__content-title">Chủ đề</h4>
+                                <div class="row">
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/chu de/chude1.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">XONE</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/chu de/chude2.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Zing Music Awards</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/chu de/chude3.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Tháp Eiffel</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Content 3 -->
+                            <div class="modal__content">
+                                <h4 class="modal__content-title">Nghệ sĩ</h4>
+                                <div class="row">
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/nghe si/jack.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Jack</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/nghe si/iu.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">IU</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/nghe si/ji-chang-wook.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Ji Chang Wook</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/nghe si/lisa.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Lisa</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/nghe si/jennie.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Jennie Kim</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/nghe si/jisoo.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Jisoo</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/nghe si/rose.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Rosé</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Content 4 -->
+                            <div class="modal__content">
+                                <h4 class="modal__content-title">Màu tối</h4>
+                                <div class="row">
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau toi/dark.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Tối</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau toi/purple.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Tím</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau toi/blue.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Xanh đậm</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau toi/blue-light.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Xanh biển</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau toi/green.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Xanh lá</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau toi/brown.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Nâu</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau toi/pink.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Hồng</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau toi/red.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Đỏ</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Content 5 -->
+                            <div class="modal__content">
+                                <h4 class="modal__content-title">Màu tối</h4>
+                                <div class="row">
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau sang/light.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Sáng</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau sang/gray.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Xám</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau sang/green-light.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Xanh nhạt</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2 m-4 c-6">
+                                        <div class="modal__content-body">
+                                            <img src="./assets/image/Chủ đề/mau sang/pink-light.jpg" alt="" class="modal__content-body-img">
+                                            <span class="modal__content-body-name">Hồng cánh sen</span>
+                                            <div class="modal__content-body-form">
+                                                <span class="modal__content-body-form-text1">ÁP DỤNG</span>
+                                                <span class="modal__content-body-form-text2">XEM TRƯỚC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- wrapper -->
+                <div class="wrapper">
+                    <div class="wrapper__slider">
+                        <img src="./assets/image/slide.jpg" class="wrapper__slider-img"></img>
+                        <div class="wrapper__slider-overlay"></div>
+
+                        <div class="wrapper__container">
+                            <div class="wrapper__body">
+                                <h1 class="wrapper__body-heading">BLACKPINK</h1>
+                                <span class="wrapper__body-desc hideOnMobile">
+                                    BLACKPINK là nhóm nhạc nữ Hàn Quốc 4 thành viên đến từ công ty YG Entertainment. Debut vào 
+                                    năm 2016, nhóm nổi tiếng và trở thành một trong những nhóm nhạc KPop thành công nhất
+                                    <span class="wrapper__body-more">...XEM THÊM</span>
+                                </span>
+                                <div class="wrapper__body-btn hideOnMobile">
+                                    <span class="wrapper__body-btn-play play-slide">
+                                        <i class="wrapper__body-btn-play-icon fa-solid fa-play"></i>
+                                        PHÁT NHẠC
+                                    </span>
+                                    <span onclick="showErrorToast()" class="wrapper__body-btn-follow">
+                                        QUAN TÂM . 769k
+                                    </span>
+                                </div>
+                                <div class="wrapper__body-song hideOnMobile">
+                                    <img src="./assets/image/p.webp" alt="" class="wrapper__body-song-img">
+                                    <div class="wrapper__body-song-list">
+                                        <span class="wrapper__body-song-list-new">MỚI NHẤT</span>
+                                        <span class="wrapper__body-song-list-name">Pink venom (Single)</span>
+                                        <span class="wrapper__body-song-list-date">19/8/2022</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <img src="./assets/image/slide.jpg" alt="" class="wrapper__slide-avatar">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mainpage -->
+                <div class="mainpage">
+                    <!-- Text cneter -->
+                    <div class="text__center">
+                        <ul class="text__center-list">
+                            <li class="text__center-item active">
+                                <a href="#" class="text__center-item-link">TỔNG QUAN</a>
+                            </li>
+                            <li class="text__center-item">
+                                <a href="#" class="text__center-item-link hideOnMobile">SỰ KIỆN</a>
+                            </li>
+                            <li class="text__center-item">
+                                <a href="#" class="text__center-item-link">BÀI HÁT</a>
+                            </li>
+                            <li class="text__center-item">
+                                <a href="#" class="text__center-item-link">SINGLE & EP</a>
+                            </li>
+                            <li class="text__center-item">
+                                <a href="#" class="text__center-item-link">ALBUM</a>
+                            </li>
+                            <li class="text__center-item">
+                                <a href="#" class="text__center-item-link">MV</a>
+                            </li>
+                            <li class="text__center-item">
+                                <a href="#" class="text__center-item-link hideOnMobile">RADIO</a>
+                            </li>
+                            <li class="text__center-item">
+                                <a href="https://zingnews.vn/BLACKPINK-tim-kiem.html?type=1&content_type=0&date=alltime&category=am-nhac" class="text__center-item-link hideOnMobile">TIN TỨC</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <!-- Tong quan -->
+                        <div class="tab-pane active">
+                            <!-- Bai hat noi bat -->
+                            <div class="chanel__section">
+                                <h3 class="mainpage-heading">Bài hát nổi bật</h3>
+                                <div class="chanel__section-container">
+                                    <ul class="chanel__section-slide-list">
+                                        <li class="chanel__section-slide-item third">
+                                            <img src="./assets/image/slide/slide1.webp" alt="" class="chanel__section-slide-img">
+                                        </li>
+                                        <li class="chanel__section-slide-item first">
+                                            <img src="./assets/image/slide/slide2.webp" alt="" class="chanel__section-slide-img">
+                                        </li>
+                                        <li class="chanel__section-slide-item second">
+                                            <img src="./assets/image/slide/slide3.webp" alt="" class="chanel__section-slide-img">
+                                        </li>
+                                        <li class="chanel__section-slide-item third">
+                                            <img src="./assets/image/slide/slide4.webp" alt="" class="chanel__section-slide-img">
+                                        </li>
+                                        <li class="chanel__section-slide-item third">
+                                            <img src="./assets/image/slide/slide5.webp" alt="" class="chanel__section-slide-img">
+                                        </li>
+                                        <li class="chanel__section-slide-item third">
+                                            <img src="./assets/image/slide/slide6.webp" alt="" class="chanel__section-slide-img">
+                                        </li>
+                                    </ul>
+
+                                    <div class="chanel__list-container">
+                                        <div class="chanel__list">
+ 
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Single & EP -->
+                            <div class="single">
+                                <div class="mainpage__header">
+                                    <h3 class="mainpage-heading">Single & EP</h3>
+                                    <span class="mainpage-seeall">
+                                        TẤT CẢ 
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single1.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pink Venom(Single)</span>
+                                                <span class="single__item-date">Mới phát hành * 8/2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">You Never Know (Japan Vwesion) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pretty Savege (Japan Version) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single3.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Ice Cream (With Selena Gomez) (Single)</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single4.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">How You Like That</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Album -->
+                            <div class="album">
+                                <div class="mainpage__header">
+                                    <h3 class="mainpage-heading">Album</h3>
+                                    <span class="mainpage-seeall">
+                                        TẤT CẢ 
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album1.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">BLACKPINK 2021 'THE SHOW' LIVE</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">THE ALBUM</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album3.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">BLACKPINK 2019-2020 WORLD TOUR IN YOUR AREA - TOKYO DOME - (LIVE)</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album4.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">BLACKPINK 2018 TOUR 'IN YOUR AREA' SEOUL (Live)</span>
+                                                <span class="single__item-date">2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album5.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">BLACKPINK ARENA TOUR 2018 SPECIAL FINAL IN KYOCERA DOME OSAKA</span>
+                                                <span class="single__item-date">2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- MV -->
+                            <div class="mv">
+                                <div class="mainpage__header">
+                                    <h3 class="mainpage-heading">MV</h3>
+                                    <span class="mainpage-seeall">
+                                        TẤT CẢ 
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </span>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l-4 m-12">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="mv__item-img" style="background-image: url('./assets/image/mv/mv1.webp');"></img>
+                                                <div class="mv__item-top-icon">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                                <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.7.24/static/media/vip-label.3dd6ac7e.svg" alt="" class="mv__item-top-vip">
+                                            </div>
+                                            <div class="mv__item-end">
+                                                <img src="./assets/image/slide.jpg" class="single__item-end-avatar"></img>
+                                                
+                                                <div class="single__item-end-body">
+                                                    <span class="mv__item-name">LoveSick Girls (Music Video / japan Version)</span>
+                                                    <span class="mv__item-date">BLACKPINK</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-12">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="mv__item-img" style="background-image: url('./assets/image/mv/mv2.webp');"></img>
+                                                <div class="mv__item-top-icon">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                                <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.7.24/static/media/vip-label.3dd6ac7e.svg" alt="" class="mv__item-top-vip">
+                                            </div>
+                                            <div class="mv__item-end">
+                                                <img src="./assets/image/slide.jpg" class="single__item-end-avatar"></img>
+                                                
+                                                <div class="single__item-end-body">
+                                                    <span class="mv__item-name">How You Like That(Music Video / Japan Version)</span>
+                                                    <span class="mv__item-date">BLACKPINK</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-12 hideOnMobile">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="mv__item-img" style="background-image: url('./assets/image/mv/mv3.webp');"></img>
+                                                <div class="mv__item-top-icon">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                                <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.7.24/static/media/vip-label.3dd6ac7e.svg" alt="" class="mv__item-top-vip">
+                                            </div>
+                                            <div class="mv__item-end">
+                                                <img src="./assets/image/slide.jpg" class="single__item-end-avatar"></img>
+                                                
+                                                <div class="single__item-end-body">
+                                                    <span class="mv__item-name">Sour Candy (Lyric Video)</span>
+                                                    <span class="mv__item-date">Lady Gaga, BLACKPINK</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tuyen tap -->
+                            <div class="collection">
+                                <div class="mainpage__header">
+                                    <h3 class="mainpage-heading">Tuyển tập</h3>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/collection.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Chỉ Có Thể Là BLACKPINK</span>
+                                                <span class="single__item-date single__item-date-active">BLACKPINK</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Xuất hiện trong -->
+                            <div class="appear">
+                                <div class="mainpage__header">
+                                    <h3 class="mainpage-heading">Xuất Hiện Trong</h3>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/appear/appear1.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Nhạc Mới Mỗi Ngày</span>
+                                                <span class="single__item-date">IVE, Elton John, Britney Spears</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/appear/appear2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Today's K-Pop Hits</span>
+                                                <span class="single__item-date">BLACKPINK, NewJeans, IVE</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/appear/appear3.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">K-Pop: The A-List</span>
+                                                <span class="single__item-date">BTS BLACKPINK, SNSD</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/appear/appear4.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">YG Family</span>
+                                                <span class="single__item-date">Bigbang, BLACKPINK</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/appear/appear5.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">K-Pop Drive</span>
+                                                <span class="single__item-date">BLACKPINK, OH MY GIRL, BTS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- footer -->
+                            <div class="footer">
+                                <div class="mainpage__header">
+                                    <h3 class="mainpage-heading">Bạn có thể thích</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img single__item-img-border" style="background-image: url('./assets/image/footer/footer1.webp');"></img>
+                                                <div class="single__item-top-icon footer__item-top-icon">
+                                                    <i class="fa-solid fa-shuffle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-end">
+                                                <span class="single__item-name">JENNIE</span>
+                                                <span class="single__item-date">225k quan tâm</span>
+                                                <span class="single__item-btn">
+                                                    <i class="fa-solid fa-user-plus"></i>  
+                                                    QUAN TÂM
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img single__item-img-border" style="background-image: url('./assets/image/footer/footer2.webp');"></img>
+                                                <div class="single__item-top-icon footer__item-top-icon">
+                                                    <i class="fa-solid fa-shuffle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-end">
+                                                <span class="single__item-name">Red Velvet</span>
+                                                <span class="single__item-date">112k quan tâm</span>
+                                                <span class="single__item-btn">
+                                                    <i class="fa-solid fa-user-plus"></i>  
+                                                    QUAN TÂM
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img single__item-img-border" style="background-image: url('./assets/image/footer/footer3.webp');"></img>
+                                                <div class="single__item-top-icon footer__item-top-icon">
+                                                    <i class="fa-solid fa-shuffle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-end">
+                                                <span class="single__item-name">EVERGLOW</span>
+                                                <span class="single__item-date">51k quan tâm</span>
+                                                <span class="single__item-btn">
+                                                    <i class="fa-solid fa-user-plus"></i>  
+                                                    QUAN TÂM
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img single__item-img-border" style="background-image: url('./assets/image/footer/footer4.webp');"></img>
+                                                <div class="single__item-top-icon footer__item-top-icon">
+                                                    <i class="fa-solid fa-shuffle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-end">
+                                                <span class="single__item-name">ROSÉ</span>
+                                                <span class="single__item-date">273k quan tâm</span>
+                                                <span class="single__item-btn">
+                                                    <i class="fa-solid fa-user-plus"></i>  
+                                                    QUAN TÂM
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img single__item-img-border" style="background-image: url('./assets/image/footer/footer5.webp');"></img>
+                                                <div class="single__item-top-icon footer__item-top-icon">
+                                                    <i class="fa-solid fa-shuffle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="footer__item-end">
+                                                <span class="single__item-name">Mamamoo</span>
+                                                <span class="single__item-date">82k quan tâm</span>
+                                                <span class="single__item-btn">
+                                                    <i class="fa-solid fa-user-plus"></i>  
+                                                    QUAN TÂM
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Su kien -->
+                        <div class="tab-pane">
+                            <div class="event__container">
+                                <div class="row">
+                                    <div class="col l-4 m-6">
+                                        <div class="event__item">
+                                            <div class="event__item-img">
+                                                <img src="./assets/image/event/event1.webp" alt="">
+                                                <div class="event-overlay"></div>
+                                                <div class="event__item-body">
+                                                    <span class="event__body-active">PHÁT HÀNH BÀI HÁT</span>
+                                                    <span class="event__body-name">Pink Venom - BLACKPINK</span>
+                                                    <span class="event__body-date">11:00 Thứ sáu, 19 tháng 8</span>
+                                                </div>
+                                            </div>
+                                            <div class="event__item-care">
+                                                <span class="event__care-amount">Lượt quan tâm
+                                                    <p>+467</p>
+                                                </span>
+                                                <div class="event__care-btn">
+                                                    <span>QUAN TÂM</span>
+                                                    <span>ĐÃ QUAN TÂM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6">
+                                        <div class="event__item">
+                                            <div class="event__item-img">
+                                                <img src="./assets/image/event/event2.webp" alt="">
+                                                <div class="event-overlay"></div>
+                                                <div class="event__item-body">
+                                                    <span class="event__body-active">PHÁT HÀNH ALBUM</span>
+                                                    <span class="event__body-name">2021 BLACKPINK: THE SHOW</span>
+                                                    <span class="event__body-date">16:00 Thứ ba, 01 tháng 6, 2021</span>
+                                                </div>
+                                            </div>
+                                            <div class="event__item-care">
+                                                <span class="event__care-amount">Lượt quan tâm
+                                                    <p>+6k</p>
+                                                </span>
+                                                <div class="event__care-btn">
+                                                    <span>QUAN TÂM</span>
+                                                    <span>ĐÃ QUAN TÂM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6">
+                                        <div class="event__item">
+                                            <div class="event__item-img">
+                                                <img src="./assets/image/event/event3.webp" alt="">
+                                                <div class="event-overlay"></div>
+                                                <div class="event__item-body">
+                                                    <span class="event__body-active">ĐÃ PHÁT HÀNH</span>
+                                                    <span class="event__body-name">THE ALBUM - BLACKPINK</span>
+                                                    <span class="event__body-date">11:00 Thứ sáu, 02 tháng 10, 2020</span>
+                                                </div>
+                                            </div>
+                                            <div class="event__item-care">
+                                                <span class="event__care-amount">Lượt quan tâm
+                                                    <p>+6k</p>
+                                                </span>
+                                                <div class="event__care-btn">
+                                                    <span>MỞ ALBUM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-6">
+                                        <div class="event__item">
+                                            <div class="event__item-img">
+                                                <img src="./assets/image/event/event4.webp" alt="">
+                                                <div class="event-overlay"></div>
+                                                <div class="event__item-body">
+                                                    <span class="event__body-active">PHÁT HÀNH BÀI HÁT</span>
+                                                    <span class="event__body-name">Ice Cream - BLACKPINK X Selena Gomez</span>
+                                                    <span class="event__body-date">11:00 Thứ sáu, 28 tháng 8, 2020</span>
+                                                </div>
+                                            </div>
+                                            <div class="event__item-care">
+                                                <span class="event__care-amount">Lượt đăng ký
+                                                    <p>+2k</p>
+                                                </span>
+                                                <div class="event__care-btn">
+                                                    <span>Phát bài hát</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bai hat -->
+                        <div class="tab-pane">
+                            <div class="song__container">
+                                <div class="song__header">
+                                    <div class="song__header-left">
+                                        <h3>Danh Sách Bài Hát</h3>
+                                        <span class="play-slide">
+                                            <i class="fa-solid fa-play"></i>
+                                            PHÁT TẤT CẢ
+                                        </span>
+                                    </div>
+                                    <div class="song__header-right">
+                                        <i class="fa-solid fa-rss"></i>
+                                        MỚI NHẤT
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="list__song">
+                                    <div class="list__song-scroll">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- single ep -->
+                        <div class="tab-pane">
+                            <div class="single__container">
+                                <div class="row">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single1.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pink Venom(Single)</span>
+                                                <span class="single__item-date">Mới phát hành * 8/2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">You Never Know (Japan Vwesion) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pretty Savege (Japan Version) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single3.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Ice Cream (With Selena Gomez) (Single)</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single4.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">How You Like That</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single1.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pink Venom(Single)</span>
+                                                <span class="single__item-date">Mới phát hành * 8/2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">You Never Know (Japan Vwesion) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pretty Savege (Japan Version) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single3.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Ice Cream (With Selena Gomez) (Single)</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single4.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">How You Like That</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single1.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pink Venom(Single)</span>
+                                                <span class="single__item-date">Mới phát hành * 8/2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">You Never Know (Japan Vwesion) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pretty Savege (Japan Version) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single3.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Ice Cream (With Selena Gomez) (Single)</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single4.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">How You Like That</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single1.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pink Venom(Single)</span>
+                                                <span class="single__item-date">Mới phát hành * 8/2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">You Never Know (Japan Vwesion) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Pretty Savege (Japan Version) (Single)</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/single/single3.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">Ice Cream (With Selena Gomez) (Single)</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- album -->
+                        <div class="tab-pane">
+                            <div class="album__container">
+                                <div class="row">
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album1.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">BLACKPINK 2021 'THE SHOW' LIVE</span>
+                                                <span class="single__item-date">2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album2.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">THE ALBUM</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album3.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">BLACKPINK 2019-2020 WORLD TOUR IN YOUR AREA - TOKYO DOME - (LIVE)</span>
+                                                <span class="single__item-date">2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album4.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">BLACKPINK 2018 TOUR 'IN YOUR AREA' SEOUL (Live)</span>
+                                                <span class="single__item-date">2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-4">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="single__item-img" style="background-image: url('./assets/image/album/album5.webp');"></img>
+                                                <div class="single__item-top-icon">
+                                                    <i class="fa-regular fa-heart hideOnMobile"></i>
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                    <i class="fa-solid fa-ellipsis hideOnMobile"></i>
+                                                </div>
+                                            </div>
+                                            <div class="single__item-end">
+                                                <span class="single__item-name">BLACKPINK ARENA TOUR 2018 SPECIAL FINAL IN KYOCERA DOME OSAKA</span>
+                                                <span class="single__item-date">2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- mv -->
+                        <div class="tab-pane">
+                            <div class="mv__container">
+                                <div class="row">
+                                    <div class="col l-4 m-12 c-12">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="mv__item-img" style="background-image: url('./assets/image/mv/mv4.webp');"></img>
+                                                <div class="mv__item-top-icon">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
+                                            <div class="mv__item-end">
+                                                <img src="./assets/image/slide.jpg" class="single__item-end-avatar"></img>
+                                                
+                                                <div class="single__item-end-body">
+                                                    <span class="mv__item-name">LoveSick Girls</span>
+                                                    <span class="mv__item-date">BLACKPINK</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-12 c-12">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="mv__item-img" style="background-image: url('./assets/image/mv/mv5.webp');"></img>
+                                                <div class="mv__item-top-icon">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
+                                            <div class="mv__item-end">
+                                                <img src="./assets/image/slide.jpg" class="single__item-end-avatar"></img>
+                                                
+                                                <div class="single__item-end-body">
+                                                    <span class="mv__item-name">DDU-Du-DDU-DU</span>
+                                                    <span class="mv__item-date">BLACKPINK</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-12 c-12">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="mv__item-img" style="background-image: url('./assets/image/mv/mv6.webp');"></img>
+                                                <div class="mv__item-top-icon">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
+                                            <div class="mv__item-end">
+                                                <img src="./assets/image/slide.jpg" class="single__item-end-avatar"></img>
+                                                
+                                                <div class="single__item-end-body">
+                                                    <span class="mv__item-name">Kill This Love</span>
+                                                    <span class="mv__item-date">BLACKPINK</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-12 c-12">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="mv__item-img" style="background-image: url('./assets/image/mv/mv6.webp');"></img>
+                                                <div class="mv__item-top-icon">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
+                                            <div class="mv__item-end">
+                                                <img src="./assets/image/slide.jpg" class="single__item-end-avatar"></img>
+                                                
+                                                <div class="single__item-end-body">
+                                                    <span class="mv__item-name">AS IF IT'S YOUR LAST</span>
+                                                    <span class="mv__item-date">BLACKPINK</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 m-12 c-12">
+                                        <div class="single__item">
+                                            <div class="single__item-top">
+                                                <img class="mv__item-img" style="background-image: url('./assets/image/mv/mv7.webp');"></img>
+                                                <div class="mv__item-top-icon">
+                                                    <i class="fa-regular fa-circle-play"></i>
+                                                </div>
+                                            </div>
+                                            <div class="mv__item-end">
+                                                <img src="./assets/image/slide.jpg" class="single__item-end-avatar"></img>
+                                                
+                                                <div class="single__item-end-body">
+                                                    <span class="mv__item-name">WHISTLE</span>
+                                                    <span class="mv__item-date">BLACKPINK</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- radio -->
+                        <div class="tab-pane">
+                            <div class="radio__container">
+                                <i class="fa-solid fa-music"></i>
+                                <span>Danh sách radio trống</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- listen mobile -->
+           <div class="listen__mobile">
+               <div class="mobile__media">
+                   <div class="mobile__media-header">
+                       <div class="mobile__media-header-icon">
+                           <i class="fa-solid fa-chevron-down"></i>
+                       </div>
+                       <div class="mobile__media-header-heading">
+                           <h4 class="mobile__media-header-name">Name</h4>
+                           <span class="mobile__media-header-author">author</span>
+                       </div>
+                   </div>
+                   <img src="./assets/image/p.webp" alt="" class="mobile__media-img">
+                </div>
+                
+                
+               <div class="mobile__control">
+                   <div class="mobile__control-top">
+                       <span class="mobile__control-update-time tracktime">00:00</span>
+                       <input type="range" class="progress-mobile progress" value="0" step="1" min="0" max="100">
+                       <div class="track-mobile track-control">
+                           <div class="track-update" style="width: 0%;"></div>
+                       </div>
+                       <span class="mobile__control-current-time">04:00</span>
+                   </div>
+                   <div class="mobile__control-end">
+                       <div class="btn btn-random">
+                           <i class="fa-solid fa-shuffle"></i>
+                       </div>
+                       <div class="btn btn-prev">
+                           <i class="fas fa-step-backward"></i>
+                       </div>
+                       <div class="btn-toggle-play">
+                           <i class="fa-regular fa-circle-pause icon-pause"></i>
+                           <i class="fa-regular fa-circle-play icon-play"></i>
+                       </div>
+                       <div class="btn btn-next">
+                           <i class="fas fa-step-forward"></i>
+                       </div>
+                       <div class="btn btn-repeat">
+                           <i class="fas fa-redo"></i>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+
+
+
+        <!-- Playing bar -->
+        <div class="playing__bar hideOnMobile">
+            <div class="playing__container">
+                <div class="playing__left">
+                    <img src="./assets/image/slide.jpg" alt="" class="playing__left-avatar">
+                    <div class="playing__left-body">
+                        <span class="playing__left-body-name">Pink Venom</span>
+                        <span class="playing__left-body-author">BLACKPINK</span>
+                    </div>
+                    <i class="fa-solid fa-heart heart-icon"></i>
+                    <i onclick="showErrorToast()" class="hideOnTablet fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="playing__center">
+                    <div class="playing__center-control">
+                        <div class="btn btn-random">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                        <div class="btn btn-prev">
+                            <i class="fas fa-step-backward"></i>
+                        </div>
+                        <div class="btn-toggle-play">
+                            <i class="fa-regular fa-circle-play icon-play"></i>
+                            <i class="fa-regular fa-circle-pause icon-pause"></i>
+                        </div>
+                        <div class="btn btn-next">
+                            <i class="fas fa-step-forward"></i>
+                        </div>
+                        <div class="btn btn-repeat">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                    </div>
+                    <div class="playing__center-range">
+                        <span class="playing__center-range-load-time tracktime">00:00</span>
+                        <input type="range" id="progress" class="progress" value="0" step = "1" min = "0" max = "100">
+                        <div class="progress__track song--track">
+                            <div class="progress__track-update" style="width: 0%;"></div>
+                        </div>
+                        <span class="playing__center-range-current-time">04:30</span>
+                    </div>
+                </div>
+                <div class="playing__right">
+                    <div class="playing__right-body">
+                        <div onclick="showErrorToast()" class="btn btn-mv">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </div>
+                        <div onclick="showErrorToast()" class="btn btn-lyric">
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+                        <div onclick="showErrorToast()" class="btn btn-window">
+                            <i class="fa-solid fa-window-restore"></i>
+                        </div>
+                        <div class="btn-volumn">
+                            <div class="volumn">
+                                <i class="fa-solid fa-volume-high volumn-up"></i>
+                                <i class="fa-solid fa-volume-xmark volumn-mute"></i>
+                            </div>
+                            <div class="hideOnTablet btn-volumn-duration">
+                                <input type="range" class="btn-volumn-duration-update" value="100" step="1" min="1" max="100">
+                                <div class="volumn--track volumn-active">
+                                    <div class="volumn-update" style="width: 100%;"></div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="showErrorToast()" class="list-song">
+                        <i class="ti-list"></i>
+                    </div>
+                </div>
+
+                <audio id="audio" src=""></audio>
+            </div>
+        </div>
+
+        <!-- Subnav bar mobile -->
+        <div class="subnav__mobile">
+            <ul class="subnav__mobile-list">
+                <li onclick="showErrorToast()" class="subnav__mobile-item">
+                    <a href="#" class="subnav__mobile-link active">
+                        <i class="fa-solid fa-user-nurse"></i>
+                        <span>Cá nhân</span>
+                    </a>
+                </li>
+                <li onclick="showErrorToast()" class="subnav__mobile-item">
+                    <a href="#" class="subnav__mobile-link">
+                        <i class="fa-solid fa-carrot"></i>
+                        <span>Khám phá</span>
+                    </a>
+                </li>
+                <li onclick="showErrorToast()" class="subnav__mobile-item">
+                    <a href="#" class="subnav__mobile-link">
+                        <i class="fa-solid fa-spa"></i>
+                        <span>#zingchart</span>
+                    </a>
+                </li>
+                <li onclick="showErrorToast()" class="subnav__mobile-item">
+                    <a href="#" class="subnav__mobile-link">
+                        <i class="fa-solid fa-sack-xmark"></i>
+                        <span>Radio</span>
+                    </a>
+                </li>
+                <li onclick="showErrorToast()" class="subnav__mobile-item">
+                    <a href="#" class="subnav__mobile-link">
+                        <i class="fa-solid fa-plate-wheat"></i>
+                        <span>Theo dõi</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Playing mobile -->
+        <div class="playing__mobile">
+            <div class="playing__mobile-left">
+                <img src="./assets/image/slide.jpg" alt="" class="playing__mobile-avatar">
+                <div class="playing__mobile-body">
+                    <span class="playing__mobile-name">Venom</span>
+                    <span class="playing__mobile-author">BLACKPINK</span>
+                </div>
+            </div>
+
+            <div class="playing__mobile-right">
+                <div class="playing__mobile-btn">
+                    <i class="fa-solid fa-play play-mobile-icon"></i>
+                    <i class="fa-solid fa-forward-step next-mobile-icon"></i>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/song.js"></script>
+</body>
+</html>
